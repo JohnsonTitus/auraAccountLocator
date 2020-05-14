@@ -6,6 +6,8 @@
         action.setParams({
             searchTerm: searchTerm
         });
+        //getting the reference to the event object
+        //before firing the event
         action.setCallback( this, function( response ) {
             var event = $A.get( "e.c:AccountsLoaded" );
             event.setParams({
